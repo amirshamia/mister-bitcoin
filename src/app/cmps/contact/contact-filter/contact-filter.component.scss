@@ -1,0 +1,31 @@
+@import "../../../../assets/scss/setup/variables";
+@import "../../../../assets/scss/setup/functions";
+
+.contact-filter{
+    place-self: center;
+    width: max-content;
+    margin: auto;
+    input {
+        font-family: monospace;
+        font-size: rem(16px);
+        border: 1px solid $clr7;
+        color: $clr7;
+        padding:15px;
+        margin-block-end: 20px;
+        height: 40px;
+        width: 300px;
+        border-radius: 8px;
+        &::placeholder{
+            font-family: monospace;
+            font-size: rem(16px);
+            color: $clr7;
+        }
+        &:active {
+            border: 2px solid $clr7;
+        }
+        &:focus-visible{
+            outline: none;
+            border: 2px solid $clr7;
+        }
+    }
+}

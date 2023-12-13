@@ -1,0 +1,7 @@
+<button class="add-contact-btn" routerLink="/edit">
+    <img src="../../../../assets/images/add-contact.png" alt=" image">
+    <span>Add contact</span>
+</button>
+<section class="contact-list">
+    <contact-preview *ngFor="let contact of contacts" [contact]="contact"></contact-preview>
+</section>

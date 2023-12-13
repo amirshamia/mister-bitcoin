@@ -1,0 +1,4 @@
+<div class="charts-container">
+    <h1>Market price chart</h1>
+    <line-chart *ngIf="lineChartData$|async as lineChartData" [lineChartData]="lineChartData"></line-chart>
+</div>
